@@ -9,5 +9,9 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:5000',
     },
+    headers: {
+      // ⚠️ Đây là phần bạn cần thêm
+      "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+    },
   },
 })
